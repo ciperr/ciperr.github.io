@@ -1,0 +1,36 @@
+site_name: Ciperr's Blogs
+repo_url: https://github.com/ciperr/ciperr.github.io
+
+nav:
+  - 主页: index.md
+  - 信息论与编码: ./信息论与编码/信息论与编码.md
+  - 信号与系统:
+      - 1.信号与系统: ./信号与系统/1信号与系统.md
+      - 2.线性时不变系统: ./信号与系统/2线性时不变系统.md
+      - 3.周期信号的傅里叶级数表示: ./信号与系统/3周期信号的傅里叶级数表示.md
+      - 4.连续时间傅里叶变换: ./信号与系统/4连续时间傅里叶变换.md
+      - 5.离散时间傅里叶变换: ./信号与系统/5离散时间傅里叶变换.md
+      - 9.拉普拉斯变换: ./信号与系统/9拉普拉斯变换.md
+      - 10.Z变换: ./信号与系统/10Z变换.md
+      - 公式总结: ./信号与系统/公式总结.md
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - search.suggest
+    - search.highlight
+
+markdown_extensions:
+  - attr_list
+  - pymdownx.arithmatex:
+      generic: true
+
+plugins:
+  - search:
+      separator: '[\s\-\.]+'
+
+extra_javascript:
+  - javascripts/config.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
